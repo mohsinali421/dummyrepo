@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <title></title>
+    <style>
+        table,
+        td,
+        div,
+        h1,
+        p {
+            font-family: Inter, sans-serif;
+        }
+
+        /* table, td {border:2px solid #000000 !important;} */
+    </style>
+</head>
+
+<body style="margin:0;padding:0;">
+
+    <table role="presentation" style="width:1200px;border-collapse:collapse;border:0;border-spacing:0;" align="center">
+        <tr>
+            <td align="center" style="padding:0;">
+                <table role="presentation"
+                    style="width:90%;border-collapse:collapse;border-spacing:0;">
+                    <!-- Company Name and Logo -->
+                    <tr>
+                        <td style="margin: 0;padding: 10px 0px 10px 0px;" align="center">
+                            <table role="presentation"
+                                style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                <tr>
+                                    <td style="padding:0;width:26px;" align="left" class="hide">
+                                        <img src="<%= companyLogo %>" alt="header logo" style="width:24px;
+                                        height:24px;" />
+
+                                    </td>
+                                    <td
+                                        style="padding-left:5px;width:20%;font-family: Inter;font-weight: 400;color: #999999;font-size: 20px;line-height: 21.78px;">
+                                        <%= companyName %>
+                                    </td>
+
+                                    <td style="padding:0;font-family: Inter;font-family: Inter;font-weight: 400;color: #999999;font-size: 20px;line-height: 21.78px;"
+                                        align="left">
+                                        <%= projectName %>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+
+
+                    </tr>
+                    <!-- Job Name -->
+                    <tr>
+                        <td style="padding:0;font-family: Inter;font-weight: 600;font-size: 26px;line-height: 29.05px;">
+                            <%= profile %>
+                    </tr>
+                    <!-- Job description -->
+                    <tr>
+                        <td
+                            style="padding-top: 20px;font-family: Inter;font-weight: 600;font-size: 20px;line-height: 21.78px;">
+                            Job description</td>
+                    </tr>
+                    <!-- Designation -->
+                    <tr>
+                        <td
+                            style="padding-top: 20px;font-family: Inter;font-weight: 600;font-size: 18px;line-height: 19.36px;">
+                            Designation : <%= designation %>
+                        </td>
+                    </tr>
+                    <!-- Experience , CTC table -->
+                    <tr>
+                        <td style="padding-top: 20px;">
+                            <table role="presentation" style="width:100%;
+                            border-spacing:0;background: rgba(123, 97, 255, 0.05);
+                            border: 1px solid #7B61FF;
+                            border-radius: 8px 8px 8px 8px;
+                            ">
+                                <tr>
+                                    <td style="padding: 10px;border-right: 1px solid #7B61FF;width: 25%;">
+                                        <table role="presentation" style="width:100%;
+                                    
+                                    border-spacing:0;">
+                                            <tr>
+                                                <td style="padding: 5px;">
+                                                    <img src="<%= experienceImg %>" style="width: 20px;height: 24px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#7B61FF;padding: 5px;">
+                                                    Experience
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 5px;font-family: Inter;font-weight: 400;font-size: 22px;line-height: 24.2px;">
+                                                    <%= experience %>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="padding: 10px;border-right: 1px solid #7B61FF;width: 25%;">
+                                        <table role="presentation"
+                                            style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                            <tr>
+                                                <td style="padding: 5px;">
+                                                    <img src="<%= ctcImg %>" style="width: 24px;height: 24px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 5px;font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#7B61FF">
+                                                    CTC
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 5px;font-family: Inter;font-weight: 400;font-size: 22px;line-height: 24.2px;">
+                                                    <%= ctc %>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="padding: 10px;border-right: 1px solid #7B61FF;width: 25%;">
+                                        <table role="presentation"
+                                            style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                            <tr>
+                                                <td style="padding: 5px;">
+                                                    <img src="<%= jobImg %>" style="width: 20px;height: 24px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 5px;font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#7B61FF">
+                                                    Job Location
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 5px;font-family: Inter;font-weight: 400;font-size: 22px;line-height: 24.2px;">
+                                                    <%= joblocation %>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="padding: 10px;">
+                                        <table role="presentation"
+                                            style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                            <tr>
+                                                <td style="padding: 5px;">
+                                                    <img src="<%= openingImg %>" style="width: 20px;height: 24px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 5px;font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#7B61FF">
+                                                    Openings
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="padding: 5px;font-family: Inter;font-weight: 400;font-size: 22px;line-height: 24.2px;">
+                                                    <%= openings %>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                    <!-- Joining Date -->
+                    <tr>
+                        <td style="padding: 20px 0 0 0;">
+                            <table role="presentation"
+                                style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                <tr>
+                                    <td style="width: 30px;">
+                                        <img src="<%= joiningImg %>" style="width:24px;height: 24px;">
+                                    </td>
+                                    <td style="font-family:Inter;font-weight: 600;
+                                    font-size: 18px;line-height: 19.36px;">Joining Date: <%= joiningdate %>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Job Type -->
+                    <tr>
+                        <td style="padding:0;">
+                            <table role="presentation"
+                                style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                <tr>
+                                    <td style="width: 30px;">
+                                        <img src="<%= jobtypeImg %>" style="width:24px;height: 24px;">
+                                    </td>
+                                    <td style="font-family:Inter;font-weight: 600;
+                                    font-size: 18px;line-height: 19.36px;">
+                                        Job Type: <%= jobtype %>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Roles and Responsibilities -->
+                    <tr>
+                        <td style="padding-top:20px;">
+                            <table role="presentation"
+                                style="width:100%;border:1px solid #CECECE;border-spacing:0;border-radius: 8px;padding: 20px;">
+                                <tr>
+                                    <td
+                                        style="font-family: Inter;font-weight: 600;font-size: 22px;line-height: 24.2px;">
+                                        <img src="<%= rolesImg %>"
+                                            style="width: 24px;height: 24px;vertical-align: middle;padding-right: 10px;">Roles
+                                        & Responsibilities
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="font-family: Inter;font-weight:400 !important;font-size: 18px;line-height: 25px;padding-top: 20px;">
+                                        <%- rolesAndResponsibilities %>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Skills -->
+                    <tr>
+                        <td style="padding-top:20px;">
+                            <table role="presentation"
+                                style="width:100%;border:1px solid #CECECE;border-spacing:0;border-radius: 8px;padding: 20px;">
+                                <tr>
+                                    <td
+                                        style="font-family: Inter;font-weight: 600;font-size: 22px;line-height: 24.2px;">
+                                        <img src="<%= skillsImg %>"
+                                            style="width: 24px;height: 24px;vertical-align: middle;padding-right: 10px;">Skills
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 20px;">
+                                        <% skills.forEach((skill,index)=>{ %>
+
+                                            <span style="display: inline-block;
+                                        padding: 0px 15px;
+                                        height: 40px;
+                                        font-size: 18px;
+                                        line-height: 40px;
+                                        border-radius: 25px;
+                                        background-color: #f1f1f1;
+                                        font-family: Inter;
+                                        margin-bottom: 10px;
+                                        margin-right: 10px;">
+                                                <%= skill %>
+                                            </span>
+                                            <% }) %>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Eligibility -->
+                    <% if(eligibility){ %>
+                        <tr>
+                            <td style="padding-top:20px;">
+                                <table role="presentation"
+                                    style="width:100%;border:1px solid #CECECE;border-spacing:0;border-radius: 8px;padding: 20px;">
+                                    <tr>
+                                        <td
+                                            style="font-family: Inter;font-weight: 600;font-size: 22px;line-height: 24.2px;">
+                                            <img src="<%= eligibilityImg %>"
+                                                style="width: 24px;height: 24px;vertical-align: middle;padding-right: 10px;">Eligibility
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="font-family: Inter;font-weight:400;font-size: 18px;line-height: 25px;padding-top: 20px;">
+                                            <table role="presentation" style="width:100%;">
+                                                <% eligibility.forEach((eligible,index)=>{ %>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="<%= checkImg %>"
+                                                                style="width: 24px;height: 24px;vertical-align: middle;">
+                                                            <% eligible %>
+                                                        </td>
+                                                    </tr>
+                                                    <% }) %>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <% } else{ %>
+                            <tr>
+                                <td style="padding-top:20px;">
+                                    <table role="presentation"
+                                        style="width:100%;border:1px solid #CECECE;border-spacing:0;border-radius: 8px;padding: 20px;">
+                                        <tr>
+                                            <td
+                                                style="font-family: Inter;font-weight: 600;font-size: 22px;line-height: 24.2px;">
+                                                <img src="<%= eligibilityImg %>"
+                                                    style="width: 24px;height: 24px;vertical-align: middle;padding-right: 10px;">Requirements
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="font-family: Inter;font-weight:400;font-size: 18px;line-height: 25px;padding-top: 20px;">
+                                                <table role="presentation" style="width:100%;">
+
+                                                    <tr>
+                                                        <td style="font-family: Inter;font-weight:400;font-size: 18px;">
+                                                            <%- requirements %>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <% } %>
+
+                                <!-- About the company -->
+                                <tr>
+                                    <td
+                                        style="padding-top: 20px;font-family: Inter;font-weight: 600;font-size: 26px;line-height: 29.05px;">
+                                        About The Company
+                                </tr>
+                                <!-- Company Table -->
+                                <tr>
+                                    <td style="padding: 20px 0 0 0; ">
+                                        <table role="presentation"
+                                            style="width:100%;border-collapse:collapse;border:1px solid #CECECE;border-spacing:0;">
+                                            <tr>
+                                                <td style="padding: 0;">
+                                                    <table role="presentation"
+                                                        style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                        <tr>
+                                                            <td
+                                                                style="border-right: 1px solid #CECECE;border-bottom: 1px solid #CECECE;padding: 10px;width:25%">
+                                                                <table role="presentation"
+                                                                    style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#999999">
+                                                                            Name
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 20px;line-height: 21.78px;">
+                                                                            <%= companyName %>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td
+                                                                style="border-right: 1px solid #CECECE;border-bottom: 1px solid #CECECE;padding: 10px;width:25%">
+                                                                <table role="presentation"
+                                                                    style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#999999">
+                                                                            Founded In
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 20px;line-height: 21.78px;">
+                                                                            <%= foundedIn %>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                            </td>
+                                                            <td
+                                                                style="border-right: 1px solid #CECECE;border-bottom: 1px solid #CECECE;padding: 10px;width:25%">
+                                                                <table role="presentation"
+                                                                    style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#999999">
+                                                                            Industry
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 20px;line-height: 21.78px;">
+                                                                            <%= industry %>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td
+                                                                style="border-bottom: 1px solid #CECECE;padding: 10px;width:25%">
+                                                                <table role="presentation"
+                                                                    style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#999999">
+                                                                            Funding
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 20px;line-height: 21.78px;">
+                                                                            <%= Funding %>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0;">
+                                                    <table role="presentation"
+                                                        style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                        <tr>
+                                                            <td style="border-right: 1px solid #CECECE;padding: 10px;">
+                                                                <table role="presentation"
+                                                                    style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#999999">
+                                                                            Website
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 20px;line-height: 22px;color: #2E8EFF;">
+                                                                            <%= websiteLink %>
+                                                                                <img src="<%= linkImg %>"
+                                                                                    style="width: 22px;height: 22px;vertical-align: middle;">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="border-right: 1px solid #CECECE;padding: 10px;">
+                                                                <table role="presentation"
+                                                                    style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#999999">
+                                                                            LinkedIn
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 20px;line-height: 22px;color:#2E8EFF">
+                                                                            <%= LinkedInLink %>
+                                                                                <img src="<%= linkImg %>"
+                                                                                    style="width: 22px;height: 22px;vertical-align: middle;">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="padding: 10px;">
+                                                                <table role="presentation"
+                                                                    style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 16px;line-height: 16.94px;color:#999999">
+                                                                            Workweek
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="font-family: Inter;font-weight: 400;font-size: 20px;line-height: 21.78px;">
+                                                                            <%= workweek %>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Company Paragraph -->
+                                <tr>
+                                    <td
+                                        style="padding-top:20px;font-family: Inter;font-weight: normal;font-size: 18px;line-height: 25px;">
+                                        <%- aboutcompany %>
+                                    </td>
+                                </tr>
+                                <!-- Company Images -->
+                                <tr>
+                                    <td style="padding-top: 30px;">
+                                        <table role="presentation"
+                                            style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                            <tr>
+                                                <td style="padding: 0;width:300px;"><img src="<%= companyImage1 %>"
+                                                        style="width: 776px;"></td>
+                                                <td>
+                                                    <table role="presentation"
+                                                        style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="<%= companyImage2 %>" style="width: 200px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding: 0;"><img src="<%= companyImage1 %>"
+                                                                    style="width: 200px;">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+
+                                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+
+</html>
