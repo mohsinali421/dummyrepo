@@ -15,12 +15,24 @@ app.get('/posted',(req,res)=>{
     const DateDifference = require('./Utilities/date_difference');
 
     const posted =  "2021-09-30T05:33:42.886";   //element.createdAt
-    const d1 = new Date(posted).toLocaleDateString();
+    const mydate = new Date(posted);
+
+    jobDate = mydate.getDate()
+    jobMonth = mydate.getMonth()
+    jobYear = mydate.getFullYear()
+
+    const d1 = `${jobDate}/${jobMonth}/${jobYear}`
 
     var t = Date.now()
-    const d = new Date(t).toLocaleDateString();
-    const d2 = changeDateFormat(d);
+    const nowDate = new Date(t)
 
+    postedDate = nowDate.getDate()
+    postedMonth = nowDate.getMonth()
+    postedYear = nowDate.getFullYear()
+
+    const d2 = `${postedMonth}/${postedDate}/${postedYear}`
+
+    console.log(d1,d2)
     const numberofDays = DateDifference(d1,d2);
 
     console.log(numberofDays)
