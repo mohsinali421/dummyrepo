@@ -53,8 +53,8 @@ const JdtoPDF = async (cb)=>{
         const filePathName = path.resolve(__dirname, '../views/jobdescription.ejs');
         const htmlString = fs.readFileSync(filePathName).toString();
         let  options = { 
-            "width": "600px",
-            "height": "1000px"
+            "width": "1200px",
+            "height": "2000px"
         };
         const ejsData = ejs.render(htmlString,data);
         await pdf.create(ejsData, options).toStream((err,response)=>{
