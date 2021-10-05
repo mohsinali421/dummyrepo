@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const JdtoPDF = require('./function/JDuploadS3PDF');
 
+app.set('view engine','ejs');
+app.set('views','views');
+
 app.get('/',(req,res)=>{
-    res.json('server started now')
+    res.render('jobdescription')
 })
 app.get('/pdf',(req,res)=>{
     JdtoPDF( downloadURL => {
