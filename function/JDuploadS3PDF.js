@@ -6,8 +6,8 @@ const AWS  = require('aws-sdk');
 
 const JdtoPDF = async (cb)=>{
     const s3 = new AWS.S3({
-        accessKeyId: 'AKIA6GT7NWRIB7TTF3F7',
-        secretAccessKey: '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',
+        accessKeyId: '',
+        secretAccessKey: '',
         region: 'ap-south-1'
       });
     try {
